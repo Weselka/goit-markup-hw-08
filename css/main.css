@@ -431,12 +431,14 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-list {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: -30px;
   }
 }
 
@@ -446,21 +448,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .feature-item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 768px) {
-  .feature-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-item {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-item:not(:last-child) {
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
 }
@@ -498,12 +486,14 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .teams-list {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: -30px;
   }
 }
 
@@ -516,21 +506,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .teams-object {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 768px) {
-  .teams-object:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .teams-object {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .teams-object:not(:last-child) {
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
 }
@@ -580,19 +556,33 @@ img {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
 }
 
 .clients-item {
   display: block;
   width: 170px;
   height: 92px;
+  width: calc((100% - 60px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
   border: 1px solid var(--subgect-color);
   border-radius: 4px;
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .clients-link {
