@@ -1,0 +1,96 @@
+
+.header {
+    border: 1px solid transparent;
+    border-bottom-color: #ECECEC;
+}
+
+.header__nav,
+.nav__list {
+    display: flex;
+}
+
+.logo {
+    display: block;
+    min-width: 145px;
+
+    @include font(Raleway, 700, 26px, 31px, 0.03em, var(--accent-color));
+    font-family: Raleway, sans-serif;
+}
+
+.header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logo--color-dark {
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.nav__item {
+    position: relative;
+    &:not(:last-child) {
+    margin-right: 50px;
+}
+}
+
+.nav__link {
+    display: block;
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    
+    @include font(null, 500, 14px, 16px, 0.02em, var(--primary-text-color));
+}
+
+.nav__link--current {
+    color: var(--accent-color);
+    &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--accent-color);
+
+    border-radius: 2px;
+}
+}
+
+.header__contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: currentColor;
+    &:hover {
+    fill: var(--accent-color);
+}
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include font(null, 500, 14px, 16px, 0.02em, var(--title-text-color));
+}
+
+.contact__icon {
+    padding-right: 10px;
+}

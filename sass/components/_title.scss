@@ -1,0 +1,93 @@
+.work-title,
+.teams-title,
+.clients-title {
+  @include font(null, 700, 36px, 42px, 0.03em, var(--primary-text-color));
+
+  text-align: center;
+}
+
+.teams-title,
+.work-title {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.work-subtitle {
+  @include font(null, 700, 14px, 24px, 0.03em, #ffffff);
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.teams-name,
+.teams-expert {
+  @include font(null, null, 16px, 19px, 0.03em, null);
+  text-align: center;
+}
+
+.teams-name {
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+
+.teams-expert {
+  margin-bottom: 16px;
+
+  color: var(--title-text-color);
+}
+
+.feature-title,
+.footer__title {
+  @include font(null, 700, 14px, 16px, 0.03em, null);
+
+  text-transform: uppercase;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+}
+
+.gallery__title {
+  @include font(null, 700, 18px, 36px, 0.06em, var(--primary-text-color));
+}
+
+.gallery__post-title {
+  @include font(null, 400, 16px, 30px, 0.03em, var(--title-text-color));
+}
+
+.hero-title {
+  @include font(null, 900, 44px, 60px, 0.06em, var(--more-text-color));
+
+  margin: auto;
+  max-width: 696px;
+  margin-bottom: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-title {
+  @include font(null, 700, 20px, 23px, 0.03em, var(--primary-text-color));
+
+  margin-bottom: 12px;
+
+  text-align: center;
+}

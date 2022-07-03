@@ -1,0 +1,31 @@
+body {
+    font-family: var(--main-font);
+    background-color: var(--primary-bgc);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    transition: color var(--transition);
+
+    text-decoration: none;
+    .header__nav &:hover,
+    .nav &:hover,
+    .nav &:focus,
+    .footer &:hover,
+    .footer &:focus,
+    .contact &:hover,
+    .contact &:focus,
+    .gallery &:hover,
+    .gallery &:focus {
+        color: var(--accent-color);
+} 
+}
