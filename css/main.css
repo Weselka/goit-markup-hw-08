@@ -178,6 +178,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .gallery__post-title {
@@ -469,6 +470,12 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
 .work-list {
   display: flex;
   align-items: center;
@@ -721,23 +728,23 @@ img {
 .portfolio__filters {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  margin-right: -8px;
 }
 
-.filters__item:not(:last-child) {
-  margin-right: 9px;
+.filters__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio__cards {
-  display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin-bottom: -30px;
   justify-content: center;
 }
 
 .gallery__item {
-  margin: 15px;
+  margin-bottom: 30px;
   flex-basis: calc(100% / 3 - var(--gallery-section-gap));
   background: var(--primary-bgc);
 }

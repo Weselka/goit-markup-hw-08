@@ -67,6 +67,7 @@
 
 .gallery__title {
   @include font(null, 700, 18px, 36px, 0.06em, var(--primary-text-color));
+  margin-bottom: 4px;
 }
 
 .gallery__post-title {

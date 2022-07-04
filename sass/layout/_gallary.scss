@@ -1,19 +1,28 @@
 .portfolio__filters {
-    @include list(flex, wrap, null, null, null, null, 50px);
-    justify-content: center;    
+    @include list(flex, wrap, null, null, null, null, 40px);
+    margin-right: -8px;
+    // margin-bottom: 50px;
+    // justify-content: center;    
+}
+
+.filters__item {
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .filters__item:not(:last-child) {
-    margin-right: 9px;
+    // margin-right: 9px;
 }
 
 .portfolio__cards {
-    @include list(flex, wrap, -15px, null, null, null, null);
+    @include list(null, wrap, null, null, null, null, -30px);
+    // @include list(flex, wrap, -15px, null, null, null, null);
     justify-content: center;     
 }
 
 .gallery__item {
-    @include item(15px, null, null, null, null, 3, var(--gallery-section-gap));
+    @include item(null, null, null, null, 30px, 3, var(--gallery-section-gap));
+    // @include item(15px, null, null, null, null, 3, var(--gallery-section-gap));
 
     background: var(--primary-bgc);
 }

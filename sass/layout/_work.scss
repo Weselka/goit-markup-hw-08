@@ -1,12 +1,18 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .work-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .work-item {
-    position: relative;
+  position: relative;
 
-    &:not(:last-child) {
-        margin-right: 30px;
-}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
