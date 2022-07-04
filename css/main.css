@@ -731,6 +731,12 @@ img {
   margin-bottom: 40px;
   margin-right: -8px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__filters {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
 
 .filters__item {
   margin-right: 8px;
@@ -742,11 +748,23 @@ img {
   margin-bottom: -30px;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__cards {
+    display: flex;
+    margin-right: -30px;
+    justify-content: flex-start;
+  }
+}
 
 .gallery__item {
-  margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - var(--gallery-section-gap));
   background: var(--primary-bgc);
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 2 - var(--gallery-section-gap));
+  }
 }
 
 .gallery__card {
@@ -784,7 +802,7 @@ img {
 
 .gallery__subject {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top-color: transparent;
 }
 
