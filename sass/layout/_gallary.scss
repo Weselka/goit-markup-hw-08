@@ -1,6 +1,8 @@
 .portfolio__filters {
   @include list(flex, wrap, null, null, null, null, 40px);
-  margin-right: -8px;
+  @media screen and (max-width: 785px) {
+      margin-right: -8px;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
     justify-content: center;
@@ -8,33 +10,41 @@
 }
 
 .filters__item {
-  margin-right: 8px;
-  margin-bottom: 15px;
-}
+  @media screen and (max-width: 785px) {
+    margin-bottom: 15px;
+  }  
+  @media screen and (max-width: 1199px) {
+    margin-right: 8px;
+    
+  } 
 
-.filters__item:not(:last-child) {
-  // margin-right: 9px;
-}
-
-.portfolio__cards {
-  @include list(null, wrap, null, null, null, null, -30px);
-  @media screen and (min-width: 768px) {
-    display: flex;
-    margin-right: -30px;
-    justify-content: flex-start;
+    &:not(:last-child) {
+      @media screen and (min-width: 1200px) {
+        margin-right: 9px;
+      }
+      }
   }
 
-  // @include list(flex, wrap, -15px, null, null, null, null);
+.portfolio__cards {
+  margin-bottom: -30px;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    @include list(flex, wrap, null, -30px, null, null, null);
+    justify-content: flex-start;
+  }
+    @media screen and (min-width: 1200px) {
+      @include list(flex, wrap, -15px, null, null, null, null);
+    }
 }
 
 .gallery__item {
+  background: var(--primary-bgc);
   @media screen and (min-width: 768px) {
     @include item(null, 30px, null, null, 30px, 2, var(--gallery-section-gap));
   }
-  // @include item(15px, null, null, null, null, 3, var(--gallery-section-gap));
-
-  background: var(--primary-bgc);
+  @media screen and (min-width: 1200px) {
+    @include item(15px, null, null, null, null, 3, var(--gallery-section-gap));
+  }
 }
 
 .gallery__card {
