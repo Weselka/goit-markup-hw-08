@@ -1,20 +1,12 @@
 .teams-list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: -30px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: -30px;
-  }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--section-item-gap);
 }
 
 .teams-object {
-  margin-bottom: 30px;
-
+  width: 100%;
   background-color: var(--primary-bgc);
 
   box-shadow: var(--card-shadow);
@@ -22,8 +14,10 @@
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
-    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
   }
 }
 
@@ -37,16 +31,14 @@
 
 .teams-soc-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 
 .teams-soc-item {
   width: 44px;
   height: 44px;
-
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
 }
 
 .teams-soc-link {

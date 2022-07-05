@@ -6,13 +6,10 @@
 
 .work-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .work-item {
   position: relative;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }

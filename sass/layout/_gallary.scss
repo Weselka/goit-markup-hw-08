@@ -1,7 +1,7 @@
 .portfolio__filters {
   @include list(flex, wrap, null, null, null, null, 40px);
   @media screen and (max-width: 785px) {
-      margin-right: -8px;
+    margin-right: -8px;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
@@ -12,18 +12,16 @@
 .filters__item {
   @media screen and (max-width: 785px) {
     margin-bottom: 15px;
-  }  
+  }
   @media screen and (max-width: 1199px) {
     margin-right: 8px;
-    
-  } 
-
-    &:not(:last-child) {
-      @media screen and (min-width: 1200px) {
-        margin-right: 9px;
-      }
-      }
   }
+  &:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 9px;
+    }
+  }
+}
 
 .portfolio__cards {
   margin-bottom: -30px;
@@ -32,18 +30,18 @@
     @include list(flex, wrap, null, -30px, null, null, null);
     justify-content: flex-start;
   }
-    @media screen and (min-width: 1200px) {
-      @include list(flex, wrap, -15px, null, null, null, null);
-    }
+  @media screen and (min-width: 1200px) {
+    @include list(flex, wrap, -15px, null, null, null, null);
+  }
 }
 
 .gallery__item {
   background: var(--primary-bgc);
   @media screen and (min-width: 768px) {
-    @include item(null, 30px, null, null, 30px, 2, var(--gallery-section-gap));
+    @include item(null, 30px, null, null, 30px, 2, var(--section-item-gap));
   }
   @media screen and (min-width: 1200px) {
-    @include item(15px, null, null, null, null, 3, var(--gallery-section-gap));
+    @include item(15px, null, null, null, null, 3, var(--section-item-gap));
   }
 }
 
