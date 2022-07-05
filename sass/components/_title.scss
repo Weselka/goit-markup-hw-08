@@ -79,12 +79,14 @@
 
   margin: auto;
   max-width: 360px;
-  // max-width: 696px;
   margin-bottom: 30px;
 
   text-align: center;
   text-transform: uppercase;
-  // @include font(null, 900, 44px, 60px, 0.06em, var(--more-text-color));
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    @include font(null, 900, 44px, 60px, 0.06em, var(--more-text-color));
+  }
 }
 
 .form-title {

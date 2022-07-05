@@ -208,6 +208,16 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    letter-spacing: 0.06em;
+    color: var(--more-text-color);
+  }
+}
 
 .form-title {
   font-weight: 700;
@@ -423,6 +433,12 @@ img {
   padding-bottom: 198px;
   background: #2f303a;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
