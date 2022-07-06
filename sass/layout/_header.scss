@@ -1,29 +1,71 @@
-
 .header {
     border: 1px solid transparent;
     border-bottom-color: #ECECEC;
 }
-
 .header__nav,
-.nav__list {
-    display: flex;
+.header__contact  {
+    @media screen and (max-width: 785px) {
+        display: none;
+    }
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__btn {
+    @include btn(null, none);
+    padding: 0;
+    background-color: transparent;
+}
+.nav__btn .menu__close {
+    display: none;
+}
+
+.nav__btn.is-open .menu__close {
+    display: block;
+}
+
+.nav__btn.is-open .menu__nav {
+    display: none;
+}
+
+.header_link,
+.nav__list {
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+
+
 .logo {
+//     @media screen and (max-width: 785px) {
+//             display: none;
+//         }
     display: block;
     min-width: 145px;
 
-    @include font(Raleway, 700, 26px, 31px, 0.03em, var(--accent-color));
     font-family: Raleway, sans-serif;
+    @include font(Raleway, 700, 24px, 28px, 0.03em, var(--accent-color));
+    // @include font(null, null, 26px, 31px, null, null);
+    
+
+    // &--span {
+    //         margin-bottom: 0;
+    //         color: #000000;
+    //     }
 }
 
-.header__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+.header__logo {  
+    padding-top: 16px;
+    padding-bottom: 16px;  
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+    // margin-right: 93px;
 }
 
-.logo--color-dark {
+.logo--span {
     margin-bottom: 0;
     color: #000000;
 }
@@ -47,23 +89,23 @@
 
 .nav__link--current {
     color: var(--accent-color);
-    &::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
+//     &::after {
+//     content: '';
+//     position: absolute;
+//     bottom: -4px;
 
-    display: block;
-    width: 100%;
-    height: 4px;
+//     display: block;
+//     width: 100%;
+//     height: 4px;
 
-    background-color: var(--accent-color);
+//     background-color: var(--accent-color);
 
-    border-radius: 2px;
-}
+//     border-radius: 2px;
+// }
 }
 
 .header__contact {
-    display: flex;
+    // display: flex;
     margin-left: auto;
 }
 

@@ -116,7 +116,7 @@
 
         @include font(null, null, 12px, 14px, 0.03em, var(--title-text-color));
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 786px) {
             justify-content: center;
         }
 
