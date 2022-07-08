@@ -328,6 +328,7 @@ img {
 }
 
 .header {
+  position: relative;
   border: 1px solid transparent;
   border-bottom-color: #ECECEC;
 }
@@ -337,30 +338,6 @@ img {
 .header__contact {
     display: none;
   }
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__btn {
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  background-color: transparent;
-}
-
-.nav__btn .menu__close {
-  display: none;
-}
-
-.nav__btn.is-open .menu__close {
-  display: block;
-}
-
-.nav__btn.is-open .menu__nav {
-  display: none;
 }
 
 .logo {
@@ -406,6 +383,16 @@ img {
 
 .nav__link--current {
   color: var(--accent-color);
+}
+.nav__link--current::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .header__contact {
@@ -976,4 +963,86 @@ img {
 .checkbox-link {
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__btn {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-bgc);
+  padding-top: 48px;
+  padding-right: 40px;
+}
+
+.menu-nav__link {
+  display: block;
+  height: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.menu-nav__link--current {
+  color: var(--accent-color);
+}
+.menu-nav__link--current::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.header__menu-contact {
+  margin-left: auto;
+}
+
+.menu-contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+.menu-contact__item:hover {
+  fill: var(--accent-color);
+}
+.menu-contact__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.contact__icon {
+  padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */
