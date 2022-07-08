@@ -73,6 +73,9 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.menu-container > .container {
+  padding-left: 40px;
+}
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -328,7 +331,6 @@ img {
 }
 
 .header {
-  position: relative;
   border: 1px solid transparent;
   border-bottom-color: #ECECEC;
 }
@@ -341,7 +343,6 @@ img {
 }
 
 .logo {
-  display: block;
   min-width: 145px;
   font-family: Raleway, sans-serif;
   font-family: Raleway;
@@ -965,36 +966,39 @@ img {
   color: var(--accent-color);
 }
 
-.menu {
+.header__menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.menu__btn {
+.header__btn {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 10px;
   border: none;
   cursor: pointer;
-  padding: 0;
   background-color: transparent;
 }
 
 .menu-container {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--primary-bgc);
-  padding-top: 48px;
-  padding-right: 40px;
+}
+
+.menu-container__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .menu-nav__link {
-  display: block;
-  height: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 40px;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -1002,40 +1006,19 @@ img {
 .menu-nav__link--current {
   color: var(--accent-color);
 }
-.menu-nav__link--current::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
 
-.header__menu-contact {
-  margin-left: auto;
+.header__menu-list {
+  margin-bottom: 64px;
 }
 
 .menu-contact__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   fill: currentColor;
 }
 .menu-contact__item:hover {
   fill: var(--accent-color);
 }
-.menu-contact__item:not(:last-child) {
-  margin-right: 30px;
-}
 
-.contact__link {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.menu-contact__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -1043,6 +1026,6 @@ img {
   color: var(--title-text-color);
 }
 
-.contact__icon {
-  padding-right: 10px;
+.menu-cocial {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

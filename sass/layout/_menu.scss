@@ -1,89 +1,78 @@
-.menu {
+.header__menu {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.menu__btn {
-    @include btn(null, none);
+.header__btn {
+    // position: absolute;
+    // top: 10px;
+    // right: 15px;
+    display: block;
+    margin-left: auto;
     padding: 0;
+    padding-top: 10px;
+
+    @include btn(null, none);
     background-color: transparent;
 }
 
 .menu-container {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 
     background-color: var(--primary-bgc);
-    padding-top: 48px;
-    padding-right: 40px;
+    // padding: 48px 40px;
+    // padding-top: 48px;
+    // padding-bottom: 48px;
 }
 
 
-.menu-nav__item {
-//     position: relative;
-//     &:not(:last-child) {
-//     margin-right: 50px;
-// }
+.menu-container__item {
+    &:not(:last-child) {
+    margin-bottom: 32px;
+}
 }
 
 .menu-nav__link {
-    display: block;
-    height: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    
-    @include font(null, 500, 14px, 16px, 0.02em, var(--primary-text-color));
+    @include font(null, 500, 40px, 47px, 0.02em, var(--primary-text-color));
 }
 
 .menu-nav__link--current {
     color: var(--accent-color);
-    &::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-
-    background-color: var(--accent-color);
-
-    border-radius: 2px;
-}
 }
 
-.header__menu-contact {
-    // display: flex;
-    margin-left: auto;
+.header__menu-list {
+    margin-bottom: 64px;
 }
 
 .menu-contact__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
     fill: currentColor;
     &:hover {
     fill: var(--accent-color);
 }
-    &:not(:last-child) {
-    margin-right: 30px;
-}
+//     &:not(:last-child) {
+//     margin-right: 30px;
+// }
 }
 
-.contact__link {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.menu-contact__link {
+    // display: flex;
+    // align-items: center;
+    // height: 100%;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     @include font(null, 500, 14px, 16px, 0.02em, var(--title-text-color));
 }
 
-.contact__icon {
-    padding-right: 10px;
+.menu-cocial {
+    display: flex;
 }
