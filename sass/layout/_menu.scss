@@ -1,40 +1,50 @@
-.header__menu {
+.header__mobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header__btn {
-    // position: absolute;
-    // top: 10px;
-    // right: 15px;
-    display: block;
-    margin-left: auto;
+    @media screen and (min-width: 786px) {
+        display: none;
+    }
     padding: 0;
-    padding-top: 10px;
+    @include btn(null, none);
+    background-color: transparent;
+}
+
+.menu__btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
 
     @include btn(null, none);
     background-color: transparent;
 }
 
-.menu-container {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-
+    .container {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        height: 100%;
+        justify-content: space-between;
+        overflow: auto;
+    }
     background-color: var(--primary-bgc);
-    // padding: 48px 40px;
-    // padding-top: 48px;
-    // padding-bottom: 48px;
 }
 
 
-.menu-container__item {
+.header__menu-item {
     &:not(:last-child) {
-    margin-bottom: 32px;
-}
+        margin-bottom: 32px;
+    }
 }
 
 .menu-nav__link {
@@ -45,34 +55,20 @@
     color: var(--accent-color);
 }
 
-.header__menu-list {
-    margin-bottom: 64px;
+.menu-contact__tel-link {
+    @include font(null, 500, 34px, 40px, 0.02em, var(--accent-color));
 }
 
-.menu-contact__item {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-    fill: currentColor;
-    &:hover {
-    fill: var(--accent-color);
-}
-//     &:not(:last-child) {
-//     margin-right: 30px;
-// }
-}
-
-.menu-contact__link {
-    // display: flex;
-    // align-items: center;
-    // height: 100%;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-
-    @include font(null, 500, 14px, 16px, 0.02em, var(--title-text-color));
+.menu-contact__mail-link {
+    @include font(null, 500, 24px, 28px, 0.02em, var(--title-text-color));
 }
 
 .menu-cocial {
     display: flex;
+    gap: 20px;
+    margin-top: 64px;
+}
+
+.menu-cocial__link {
+    @include font(null, 500, 18px, 22px, 0.02em, var(--accent-color));    
 }

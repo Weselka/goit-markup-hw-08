@@ -73,8 +73,9 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.menu-container > .container {
-  padding-left: 40px;
+.menu > .container {
+  position: relative;
+  padding: 48px 40px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -966,23 +967,35 @@ img {
   color: var(--accent-color);
 }
 
-.header__menu {
+.header__mobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .header__btn {
-  display: block;
-  margin-left: auto;
   padding: 0;
-  padding-top: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+@media screen and (min-width: 786px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;
 }
 
-.menu-container {
+.menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -990,8 +1003,16 @@ img {
   height: 100vh;
   background-color: var(--primary-bgc);
 }
+.menu .container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
 
-.menu-container__item:not(:last-child) {
+.header__menu-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -1007,25 +1028,32 @@ img {
   color: var(--accent-color);
 }
 
-.header__menu-list {
-  margin-bottom: 64px;
-}
-
-.menu-contact__item {
-  fill: currentColor;
-}
-.menu-contact__item:hover {
-  fill: var(--accent-color);
-}
-
-.menu-contact__link {
+.menu-contact__tel-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu-contact__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
 .menu-cocial {
   display: flex;
+  gap: 20px;
+  margin-top: 64px;
+}
+
+.menu-cocial__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
