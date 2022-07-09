@@ -73,9 +73,14 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.menu > .container {
-  position: relative;
-  padding: 48px 40px;
+@media screen and (max-width: 767px) {
+  .menu > .container {
+    position: relative;
+    padding: 48px 40px;
+  }
+}
+.menu > .container .header__link {
+  justify-content: flex-start;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -332,19 +337,54 @@ img {
 }
 
 .header {
+  position: relative;
+  width: 100%;
   border: 1px solid transparent;
-  border-bottom-color: #ECECEC;
+  border-bottom-color: #ececec;
 }
 
-@media screen and (max-width: 785px) {
-  .header__nav,
-.header__contact {
+@media screen and (max-width: 767px) {
+  .header__nav {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.header__contact {
+  margin-left: 84px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .header__contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__link,
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .logo {
-  min-width: 145px;
+  min-width: 134px;
   font-family: Raleway, sans-serif;
   font-family: Raleway;
   font-weight: 700;
@@ -353,10 +393,23 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    min-width: 145px;
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
+}
 
 .header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .logo--span {
@@ -397,10 +450,6 @@ img {
   border-radius: 2px;
 }
 
-.header__contact {
-  margin-left: auto;
-}
-
 .contact__item {
   display: flex;
   align-items: center;
@@ -410,16 +459,16 @@ img {
 .contact__item:hover {
   fill: var(--accent-color);
 }
-.contact__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .contact__link {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -428,7 +477,7 @@ img {
 }
 
 .contact__icon {
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .hero {
@@ -515,7 +564,7 @@ img {
   background-color: var(--primary-bgc);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 768px) {
   .teams-object {
@@ -968,6 +1017,7 @@ img {
 }
 
 .header__mobile {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -979,7 +1029,7 @@ img {
   cursor: pointer;
   background-color: transparent;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .header__btn {
     display: none;
   }
@@ -1010,6 +1060,11 @@ img {
   height: 100%;
   justify-content: space-between;
   overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .header__menu-item:not(:last-child) {

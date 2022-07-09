@@ -5,8 +5,13 @@
   margin-left: auto;
   margin-right: auto;
   .menu > & {
-    position: relative;
-    padding: 48px 40px;
+    @media screen and (max-width: 767px) {
+      position: relative;
+      padding: 48px 40px;
+    }
+    & .header__link {
+      justify-content: flex-start;
+    }
   }
 
   @media screen and (min-width: 480px) {
