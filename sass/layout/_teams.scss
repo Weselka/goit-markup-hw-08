@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--section-item-gap);
+  overflow-x: hidden;
 }
 
 .teams-object {

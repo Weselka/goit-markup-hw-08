@@ -52,15 +52,18 @@
   color: var(--title-text-color);
 }
 
-.feature-title,
 .footer__title {
   @include font(null, 700, 14px, 16px, 0.03em, null);
+  text-align: center;
 
   text-transform: uppercase;
 }
 
 .feature-title {
   margin-bottom: 10px;
+  @include font(null, 700, 14px, 16px, 0.03em, null);
+
+  text-transform: uppercase;
 
   color: var(--primary-text-color);
 }

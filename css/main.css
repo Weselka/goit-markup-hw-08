@@ -37,6 +37,7 @@ body {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -174,17 +175,22 @@ img {
   color: var(--title-text-color);
 }
 
-.feature-title,
 .footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .feature-title {
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
@@ -286,11 +292,17 @@ img {
   padding: 10px 55px;
 }
 
-.btn-wrap__footer {
+.btn-wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.btn-wrap__footer {
+  display: flex;
   height: 100%;
   padding: 10px 29px;
+  margin-top: 20px;
 }
 
 .hero-btn {
@@ -348,7 +360,7 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -581,6 +593,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--section-item-gap);
+  overflow-x: hidden;
 }
 
 .teams-object {
@@ -693,21 +706,19 @@ img {
   background-color: #2f303a;
 }
 
-.footer__info {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer__site {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo--color-white {
+.logo--color {
+  text-align: center;
   color: var(--more-text-color);
 }
 
 .footer__address {
-  width: 231px;
   margin-top: 20px;
 }
 
@@ -718,20 +729,23 @@ img {
   letter-spacing: 0.03em;
 }
 
-.address--color-white {
+.address .address__link--color {
   color: var(--more-text-color);
 }
 
-.address--color-grey {
+.address__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.address__item .address__link--color {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__item {
-  margin-top: 9px;
-}
-
 .footer__soc-info {
-  margin-right: 93px;
+  margin-top: 60px;
 }
 
 .footer__title {
@@ -778,14 +792,13 @@ img {
 }
 
 .footer__form {
-  width: 570px;
+  margin-top: 60px;
 }
 
 .form-wrap__footer {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  text-transform: uppercase;
 }
 
 .form-footer__input {
