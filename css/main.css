@@ -80,7 +80,7 @@ img {
   }
 }
 .menu > .container .header__link {
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -348,7 +348,7 @@ img {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -358,8 +358,6 @@ img {
 
 .header__contact {
   margin-left: 84px;
-  padding-top: 21px;
-  padding-bottom: 21px;
   gap: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -371,6 +369,13 @@ img {
   .header__contact {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__contact {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -380,6 +385,29 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__link,
+.nav__list {
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -398,17 +426,6 @@ img {
     min-width: 145px;
     font-size: 26px;
     line-height: 1.1923076923;
-  }
-}
-
-.header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .header__logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 
@@ -469,15 +486,22 @@ img {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    padding-top: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact__icon {
   padding-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    padding-right: 10px;
+  }
 }
 
 .hero {
@@ -1016,11 +1040,13 @@ img {
   color: var(--accent-color);
 }
 
-.header__mobile {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (max-width: 1199px) {
+  .header__mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .header__btn {

@@ -8,7 +8,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -16,49 +16,32 @@
 }
 
 .header__contact {
+  margin-left: 84px;
+  gap: 10px;
   @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
-  margin-left: 84px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  gap: 10px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 .header__link,
 .nav__list {
-  // width: 100%;
-  // margin: 0;
-  // display: block;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // flex-wrap: wrap;
   }
-}
-
-.logo {
-  min-width: 134px;
-  //
-
-  font-family: Raleway, sans-serif;
-  @include font(Raleway, 700, 24px, 28px, 0.03em, var(--accent-color));
-
   @media screen and (min-width: 1200px) {
-    min-width: 145px;
-    @include font(null, null, 26px, 31px, null, null);
+    justify-content: space-between;
   }
-
-  // &--span {
-  //         margin-bottom: 0;
-  //         color: #000000;
-  //     }
 }
 
 .header__logo {
@@ -67,11 +50,24 @@
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
-    // margin-right: 88px;
   }
-  // padding-top: 24px;
-  // padding-bottom: 25px;
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo {
+  min-width: 134px;
+
+  font-family: Raleway, sans-serif;
+  @include font(Raleway, 700, 24px, 28px, 0.03em, var(--accent-color));
+
+  @media screen and (min-width: 1200px) {
+    min-width: 145px;
+    @include font(null, null, 26px, 31px, null, null);
+  }
 }
 
 .logo--span {
@@ -122,26 +118,24 @@
   &:hover {
     fill: var(--accent-color);
   }
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
 }
 
 .contact__link {
   display: flex;
   align-items: center;
   height: 100%;
-  //   padding-top: 15px;
-
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
 
   @include font(null, 500, 14px, 16px, 0.02em, var(--title-text-color));
-
-  @include font(null, 500, 14px, 16px, 0.02em, var(--title-text-color));
+  @media screen and (min-width: 1200px) {
+    padding-top: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact__icon {
   padding-right: 8px;
-  //   padding-right: 10px;
+  @media screen and (min-width: 1200px) {
+    padding-right: 10px;
+  }
 }
