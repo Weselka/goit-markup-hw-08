@@ -136,7 +136,6 @@
 
      @media screen and (min-width: 1200px) {
     justify-content: flex-end;
-    // flex-wrap: wrap;
     gap: 12px;}
 }
 
@@ -162,14 +161,12 @@
 }
 
 .footer_link-wrap {
-    display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;}
   @media screen and (max-width: 1199px) {    
     align-items: baseline;
     justify-content: space-between;
     padding-left: 76px;
     padding-right: 89px;
   }
-//   @media screen and (min-width: 1200px) {
-//     justify-content: start;
-//   }
 }
