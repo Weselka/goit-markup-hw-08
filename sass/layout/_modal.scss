@@ -49,8 +49,8 @@
     flex-direction: column;
     margin-bottom: 10px;
 
-    & input,
-    & textarea {
+    & .input,
+    & .comment {
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
     }
