@@ -53,6 +53,10 @@
 }
 
 .footer__title {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--more-text-color);
   @include font(null, 700, 14px, 16px, 0.03em, null);
   text-align: center;
 
