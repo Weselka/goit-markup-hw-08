@@ -50,7 +50,7 @@ img {
   transition: color var(--transition);
   text-decoration: none;
 }
-.header__nav .link:hover, .nav .link:hover, .nav .link:focus, .footer .link:hover, .footer .link:focus, .contact .link:hover, .contact .link:focus, .gallery .link:hover, .gallery .link:focus {
+.header__mobile .link:hover, .header__mobile .link:focus, .nav .link:hover, .nav .link:focus, .contact .link:hover, .contact .link:focus, .footer .link:hover, .footer .link:focus, .contact .link:hover, .contact .link:focus, .gallery .link:hover, .gallery .link:focus {
   color: var(--accent-color);
 }
 
@@ -264,6 +264,36 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: transparent;
+}
+
+.header__btn {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  transition: fill var(--transition);
+}
+.header__btn:hover > .menu__icon-line, .header__btn:focus > .menu__icon-line {
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: fill var(--transition);
+}
+.menu__btn:hover > .menu__icon-cross, .menu__btn:focus > .menu__icon-cross {
+  fill: var(--accent-color);
 }
 
 .filters__btn {
@@ -1166,7 +1196,7 @@ img {
   transition: outline var(--transition);
 }
 .checkbox:checked + .checkbox-icon {
-  background-color: #188CE8;
+  background-color: #188ce8;
   border-color: transparent;
   fill-opacity: 1;
   fill: var(--primary-bgc);
@@ -1188,28 +1218,6 @@ img {
     align-items: center;
     justify-content: space-between;
   }
-}
-
-.header__btn {
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .header__btn {
-    display: none;
-  }
-}
-
-.menu__btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
 }
 
 .menu {
@@ -1235,7 +1243,12 @@ img {
 }
 
 .header__menu-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 480px) {
+  .header__menu-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .menu-nav__link {

@@ -7,25 +7,6 @@
   }
 }
 
-.header__btn {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  padding: 0;
-  @include btn(null, none);
-  background-color: transparent;
-}
-
-.menu__btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 0;
-
-  @include btn(null, none);
-  background-color: transparent;
-}
-
 .menu {
   position: fixed;
   top: 0;
@@ -50,8 +31,13 @@
 
 .header__menu-item {
   &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width:480px) {
+    &:not(:last-child) {
     margin-bottom: 32px;
   }
+  }  
 }
 
 .menu-nav__link {

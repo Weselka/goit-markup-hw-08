@@ -18,9 +18,12 @@ img {
     transition: color var(--transition);
 
     text-decoration: none;
-    .header__nav &:hover,
+    .header__mobile &:hover,
+    .header__mobile &:focus,
     .nav &:hover,
     .nav &:focus,
+    .contact &:hover,
+    .contact &:focus,
     .footer &:hover,
     .footer &:focus,
     .contact &:hover,

@@ -1,170 +1,168 @@
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    padding: 94px 15px;
+  position: fixed;
+  top: 0;
+  padding: 94px 15px;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition), visibility var(--transition);
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition), visibility var(--transition);
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .modal {
-    position: relative;
-    padding: 40px;
+  position: relative;
+  padding: 40px;
 
-    background-color: var(--primary-bgc);
-    box-shadow: var(--card-shadow);
-    border-radius: 4px;
+  background-color: var(--primary-bgc);
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
 
-    transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
+  transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
 
-    .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0) rotate(-360deg);
-    }
-    @media screen and (min-width: 528px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 528px;
-        min-height: 581px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+  }
+  @media screen and (min-width: 528px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 581px;
 
-        transform: translate(-50%, -50%) scale(1) rotate(0);
-    }
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
 }
 
 .form-group {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 
-    & .input,
-    & .comment {
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-    }
+  & .input,
+  & .comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
 
-    &.textarea {
-        margin-bottom: 20px;
-    }
+  &.textarea {
+    margin-bottom: 20px;
+  }
 }
 
 .form .label {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
 .form-label {
-    display: inline-block;
-    margin-bottom: 4px;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
 .form-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill var(--transition);
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--transition);
 
-    .form-group:focus-within>& {
-        fill: var(--accent-color);
-    }
+  .form-group:focus-within > & {
+    fill: var(--accent-color);
+  }
 }
 
 .form-input {
-    width: 100%;
-    background-color: transparent;
-    padding: 12px 42px;
+  width: 100%;
+  background-color: transparent;
+  padding: 12px 42px;
 
-    transition: outline var(--transition),
-        border-color var(--transition);
+  transition: outline var(--transition), border-color var(--transition);
 
-    &:focus {
-        outline: transparent;
-        border-color: var(--accent-color);
-    }
+  &:focus {
+    outline: transparent;
+    border-color: var(--accent-color);
+  }
 
-    &::placeholder {
-        color: var(--accent-color);
-    }
+  &::placeholder {
+    color: var(--accent-color);
+  }
 }
 
 .form-checkbox {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    & .checkbox-label {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        flex-wrap: wrap;
+  & .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
 
-        @include font(null, null, 12px, 14px, 0.03em, var(--title-text-color));
+    @include font(null, null, 12px, 14px, 0.03em, var(--title-text-color));
 
-        @media screen and (min-width: 786px) {
-            justify-content: center;
-        }
-
-        @media screen and (min-width: 1200px) {
-            @include font(null, null, 14px, 24px, null, null);
-        }
+    @media screen and (min-width: 786px) {
+      justify-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+      @include font(null, null, 14px, 24px, null, null);
+    }
+  }
 }
 
 .comment {
-    height: 120px;
-    padding: 16px 12px;
+  height: 120px;
+  padding: 16px 12px;
 
-    @include font(null, null, 14px, 24px, 0.01em, rgba(117, 117, 117, 0.5));
+  @include font(null, null, 14px, 24px, 0.01em, rgba(117, 117, 117, 0.5));
 
-    transition: outline var(--transition),
-        border-color var(--transition);
+  transition: outline var(--transition), border-color var(--transition);
 
-    &:focus {
-        outline: transparent;
-        border-color: var(--accent-color);
-    }
+  &:focus {
+    outline: transparent;
+    border-color: var(--accent-color);
+  }
 }
 
 .checkbox-icon {
-    margin-right: 7px;
+  margin-right: 7px;
 
-    border: 2px solid var(--primary-text-color);
-    border-radius: 2px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
 
-    fill-opacity: 0;
+  fill-opacity: 0;
 
-    transition: outline var(--transition);
+  transition: outline var(--transition);
 
-    .checkbox:checked+& {
-        background-color: #188CE8;
-        border-color: transparent;
-        fill-opacity: 1;
-        fill: var(--primary-bgc);
-    }
+  .checkbox:checked + & {
+    background-color: #188ce8;
+    border-color: transparent;
+    fill-opacity: 1;
+    fill: var(--primary-bgc);
+  }
 
-    .checkbox:focus+& {
-        outline: var(--accent-color);
-        border-color: var(--accent-color);
-    }
+  .checkbox:focus + & {
+    outline: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .checkbox-link {
-    text-decoration-line: underline;
-    color: var(--accent-color);
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
