@@ -25,7 +25,7 @@
             >Web<span class="logo--span link">Studio</span>
           </a>
           <button type="button" class="header__btn" data-menu-open>
-            <svg width="40" height="40">
+            <svg class="menu__icon-line" width="40" height="40">
               <use href="./images/symbol-contacts-defs.svg#menu_40px"></use>
             </svg>
           </button>
@@ -33,7 +33,7 @@
         <nav class="nav header__nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студия</a>
+              <a href="./index.html" class="nav__link  link">Студия</a>
             </li>
             <li class="nav__item">
               <a href="./portfolio.html" class="nav__link nav__link--current link">Портфолио</a>
@@ -67,23 +67,20 @@
       <div class="menu is-hidden" data-menu>
         <div class="container">
           <button type="button" class="menu__btn" data-menu-close>
-            <svg width="40" height="40">
-              <use
-                class="menu__icon-cross"
-                href="./images/symbol-contacts-defs.svg#close_40px"
-              ></use>
+            <svg class="menu__icon-cross" width="40" height="40">
+              <use href="./images/symbol-contacts-defs.svg#close_40px"></use>
             </svg>
           </button>
           <div>
             <nav class="menu-nav">
               <ul class="menu-nav__list header__menu-list list">
                 <li class="menu-nav__item header__menu-item">
-                  <a href="./index.html" class="menu-nav__link link">Студия</a>
+                  <a href="./index.html" class="menu-nav__link  link"
+                    >Студия</a
+                  >
                 </li>
                 <li class="menu-nav__item header__menu-item">
-                  <a href="./portfolio.html" class="menu-nav__link menu-nav__link--current link"
-                    >Портфолио</a
-                  >
+                  <a href="./portfolio.html" class="menu-nav__link menu-nav__link--current link">Портфолио</a>
                 </li>
                 <li class="menu-nav__item header__menu-item">
                   <a href="" class="menu-nav__link link">Контакты</a>
@@ -149,24 +146,28 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio1.jpg 1x, 
-                      ./images/portfolio1-2x-min.jpg 2x"
+                      srcset="./images/portfolio1.jpg 1x, ./images/portfolio1-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio1-tab-min.jpg 1x, 
-                      ./images/portfolio1-tab-2x-min.jpg 2x"
+                        ./images/portfolio1-tab-min.jpg    1x,
+                        ./images/portfolio1-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio1-mob-min.jpg 1x, 
-                      ./images/portfolio1-mob-2x-min.jpg 2x"
+                        ./images/portfolio1-mob-min.jpg    1x,
+                        ./images/portfolio1-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio1.jpg" alt="Веб-сайт Технокряк" width="450" />
+                    <img
+                      src="./images/portfolio1-mob-min.jpg"
+                      alt="Веб-сайт Технокряк"
+                      width="450"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -185,25 +186,25 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio2.jpg 1x, 
-                      ./images/portfolio2-2x-min.jpg 2x"
+                      srcset="./images/portfolio2.jpg 1x, ./images/portfolio2-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio2-tab-min.jpg 1x, 
-                      ./images/portfolio2-tab-2x-min.jpg 2x"
+                        ./images/portfolio2-tab-min.jpg    1x,
+                        ./images/portfolio2-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio2-mob-min.jpg 1x, 
-                      ./images/portfolio2-mob-2x-min.jpg 2x"
+                        ./images/portfolio2-mob-min.jpg    1x,
+                        ./images/portfolio2-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio2.jpg" alt="Дизайн постера" width="450" />
-                  </picture>                  
+                    <img src="./images/portfolio2-mob-min.jpg" alt="Дизайн постера" width="450" />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -223,25 +224,29 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio3.jpg 1x, 
-                      ./images/portfolio3-2x-min.jpg 2x"
+                      srcset="./images/portfolio3.jpg 1x, ./images/portfolio3-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio3-tab-min.jpg 1x, 
-                      ./images/portfolio3-tab-2x-min.jpg 2x"
+                        ./images/portfolio3-tab-min.jpg    1x,
+                        ./images/portfolio3-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio3-mob-min.jpg 1x, 
-                      ./images/portfolio3-mob-2x-min.jpg 2x"
+                        ./images/portfolio3-mob-min.jpg    1x,
+                        ./images/portfolio3-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio3.jpg" alt="Приложение для ресторана" width="450" />
-                  </picture>                  
+                    <img
+                      src="./images/portfolio3-mob-min.jpg"
+                      alt="Приложение для ресторана"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -259,24 +264,28 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio4.jpg 1x, 
-                      ./images/portfolio4-2x-min.jpg 2x"
+                      srcset="./images/portfolio4.jpg 1x, ./images/portfolio4-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio4-tab-min.jpg 1x, 
-                      ./images/portfolio4-tab-2x-min.jpg 2x"
+                        ./images/portfolio4-tab-min.jpg    1x,
+                        ./images/portfolio4-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio4-mob-min.jpg 1x, 
-                      ./images/portfolio4-mob-2x-min.jpg 2x"
+                        ./images/portfolio4-mob-min.jpg    1x,
+                        ./images/portfolio4-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio4.jpg" alt="Маркетинговый проект" width="450" />
+                    <img
+                      src="./images/portfolio4-mob-min.jpg"
+                      alt="Маркетинговый проект"
+                      width="450"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -295,28 +304,28 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio5.jpg 1x, 
-                      ./images/portfolio5-2x-min.jpg 2x"
+                      srcset="./images/portfolio5.jpg 1x, ./images/portfolio5-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio5-tab-min.jpg 1x, 
-                      ./images/portfolio5-tab-2x-min.jpg 2x"
+                        ./images/portfolio5-tab-min.jpg    1x,
+                        ./images/portfolio5-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio5-mob-min.jpg 1x, 
-                      ./images/portfolio5-mob-2x-min.jpg 2x"
+                        ./images/portfolio5-mob-min.jpg    1x,
+                        ./images/portfolio5-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
                     <img
-                    src="./images/portfolio5.jpg"
-                    alt="Приложение для подбора упаковки"
-                    width="450"
-                  />
+                      src="./images/portfolio5-mob-min.jpg"
+                      alt="Приложение для подбора упаковки"
+                      width="450"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -335,24 +344,28 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio6.jpg 1x, 
-                      ./images/portfolio6-2x-min.jpg 2x"
+                      srcset="./images/portfolio6.jpg 1x, ./images/portfolio6-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio6-tab-min.jpg 1x, 
-                      ./images/portfolio6-tab-2x-min.jpg 2x"
+                        ./images/portfolio6-tab-min.jpg    1x,
+                        ./images/portfolio6-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio6-mob-min.jpg 1x, 
-                      ./images/portfolio6-mob-2x-min.jpg 2x"
+                        ./images/portfolio6-mob-min.jpg    1x,
+                        ./images/portfolio6-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio6.jpg" alt="Веб-сайт для путешествий" width="450" />
+                    <img
+                      src="./images/portfolio6-mob-min.jpg"
+                      alt="Веб-сайт для путешествий"
+                      width="450"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -371,24 +384,24 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio7.jpg 1x, 
-                      ./images/portfolio7-2x-min.jpg 2x"
+                      srcset="./images/portfolio7.jpg 1x, ./images/portfolio7-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio7-tab-min.jpg 1x, 
-                      ./images/portfolio7-tab-2x-min.jpg 2x"
+                        ./images/portfolio7-tab-min.jpg    1x,
+                        ./images/portfolio7-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio7-mob-min.jpg 1x, 
-                      ./images/portfolio7-mob-2x-min.jpg 2x"
+                        ./images/portfolio7-mob-min.jpg    1x,
+                        ./images/portfolio7-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio7.jpg" alt="Дизайн издания" width="450" />
+                    <img src="./images/portfolio7-mob-min.jpg" alt="Дизайн издания" width="450" />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -409,24 +422,28 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio8.jpg 1x, 
-                      ./images/portfolio8-2x-min.jpg 2x"
+                      srcset="./images/portfolio8.jpg 1x, ./images/portfolio8-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio8-tab-min.jpg 1x, 
-                      ./images/portfolio8-tab-2x-min.jpg 2x"
+                        ./images/portfolio8-tab-min.jpg    1x,
+                        ./images/portfolio8-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio8-mob-min.jpg 1x, 
-                      ./images/portfolio8-mob-2x-min.jpg 2x"
+                        ./images/portfolio8-mob-min.jpg    1x,
+                        ./images/portfolio8-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
-                    <img src="./images/portfolio8.jpg" alt="Разработка макетов" width="450" />
+                    <img
+                      src="./images/portfolio8-mob-min.jpg"
+                      alt="Разработка макетов"
+                      width="450"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -445,28 +462,28 @@
                 <div class="gallery__thumb">
                   <picture>
                     <source
-                      srcset="
-                      ./images/portfolio9.jpg 1x, 
-                      ./images/portfolio9-2x-min.jpg 2x"
+                      srcset="./images/portfolio9.jpg 1x, ./images/portfolio9-2x-min.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio9-tab-min.jpg 1x, 
-                      ./images/portfolio9-tab-2x-min.jpg 2x"
+                        ./images/portfolio9-tab-min.jpg    1x,
+                        ./images/portfolio9-tab-2x-min.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                      ./images/portfolio9-mob-min.jpg 1x, 
-                      ./images/portfolio9-mob-2x-min.jpg 2x"
+                        ./images/portfolio9-mob-min.jpg    1x,
+                        ./images/portfolio9-mob-2x-min.jpg 2x
+                      "
                       media="(min-width: 320px)"
                     />
                     <img
-                    src="./images/portfolio9.jpg"
-                    alt="Приложение для развивающегося бизнеса"
-                    width="450"
-                  />
+                      src="./images/portfolio9-mob-min.jpg"
+                      alt="Приложение для развивающегося бизнеса"
+                      width="450"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и

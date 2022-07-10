@@ -186,6 +186,11 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: start;
+  }
+}
 
 .feature-title {
   margin-bottom: 10px;
