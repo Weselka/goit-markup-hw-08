@@ -1,13 +1,14 @@
 .portfolio__filters {
   width: 100%;
-  @include list(flex, wrap, null, null, null, null, 40px);
+  @include list(flex, wrap, null, null, null, null, null);
+  padding-bottom: 40px;
   grid-gap: 8px;
   grid-row-gap: 15px;
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 
