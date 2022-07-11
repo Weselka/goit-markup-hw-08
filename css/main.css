@@ -896,7 +896,7 @@ img {
   fill: currentColor;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer__form {
     padding-top: 60px;
   }
@@ -946,7 +946,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .form-footer__input {
-    max-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -964,12 +964,14 @@ img {
 @media screen and (min-width: 768px) {
   .footer_link-wrap {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer_link-wrap {
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
   }
 }
 
