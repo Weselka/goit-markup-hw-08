@@ -852,7 +852,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__soc-info {
-    margin-right: 93px;
+    padding-right: 93px;
   }
 }
 
