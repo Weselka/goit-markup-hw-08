@@ -966,7 +966,7 @@ img {
     display: flex;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer_link-wrap {
     align-items: baseline;
     justify-content: space-between;
