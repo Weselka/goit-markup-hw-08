@@ -129,12 +129,12 @@ img {
 
 .teams-title,
 .work-title {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .teams-title,
 .work-title {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 
