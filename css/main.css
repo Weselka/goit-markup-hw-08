@@ -804,7 +804,7 @@ img {
 }
 
 .footer__address {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer__address {
@@ -826,7 +826,7 @@ img {
 .address__item {
   display: block;
   text-align: center;
-  margin-top: 8px;
+  padding-top: 8px;
 }
 @media screen and (min-width: 768px) {
   .address__item {
@@ -841,13 +841,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .address__item {
-    margin-top: 9px;
+    padding-top: 9px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer__soc-info {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -897,7 +897,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .footer__form {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
