@@ -853,12 +853,13 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__soc-info {
     padding-right: 93px;
+    align-items: baseline;
   }
 }
 
 .soc-info__list {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   width: 100%;
   overflow-x: hidden;
