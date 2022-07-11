@@ -189,7 +189,8 @@
   @media screen and (max-width: 1199px) {
     align-items: baseline;
     justify-content: center;
-    gap: 60px;
+    grid-gap: 165px;
+    grid-row-gap:60px;
   }
 }
 }

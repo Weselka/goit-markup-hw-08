@@ -971,7 +971,8 @@ img {
   .footer_link-wrap {
     align-items: baseline;
     justify-content: center;
-    gap: 60px;
+    grid-gap: 165px;
+    grid-row-gap: 60px;
   }
 }
 
