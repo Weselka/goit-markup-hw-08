@@ -411,7 +411,7 @@ img {
 }
 
 .header__contact {
-  margin-left: 84px;
+  padding-left: 84px;
   gap: 10px;
 }
 @media screen and (max-width: 767px) {
