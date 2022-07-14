@@ -8,15 +8,19 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px)and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-left: 88px;
   }
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
 }
 
 .header__contact {
-  margin-left: 84px;
+  margin-left: auto;
   gap: 10px;
   @media screen and (max-width: 767px) {
     display: none;
@@ -24,10 +28,20 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
     gap: 30px;
   }
-  @media screen and (max-width: 1199px) {
+}
+
+.header__contact--mail {
+  @media screen and (min-width: 768px) {
     padding-top: 21px;
+  }
+}
+
+.header__contact--tel {
+  @media screen and (min-width: 768px) {
     padding-bottom: 21px;
   }
 }
@@ -36,11 +50,7 @@
 .nav__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
   }
 }
 
@@ -59,13 +69,11 @@
 }
 
 .logo {
-  min-width: 134px;
-
   font-family: Raleway, sans-serif;
   @include font(Raleway, 700, 24px, 28px, 0.03em, var(--accent-color));
 
   @media screen and (min-width: 1200px) {
-    min-width: 145px;
+    // min-width: 145px;
     @include font(null, null, 26px, 31px, null, null);
   }
 }
@@ -124,14 +132,16 @@
   display: flex;
   align-items: center;
   height: 100%;
-
+  
   @include font(null, 500, 14px, 16px, 0.02em, var(--title-text-color));
+  
   @media screen and (min-width: 1200px) {
     padding-top: 15px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
+
 
 .contact__icon {
   padding-right: 8px;

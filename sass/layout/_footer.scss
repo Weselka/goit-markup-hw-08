@@ -21,6 +21,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -174,6 +175,11 @@
   }
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
+  }
+  transition: border-color var(--transition);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
   }
 }
 
