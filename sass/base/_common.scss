@@ -18,6 +18,10 @@ img {
     transition: color var(--transition);
 
     text-decoration: none;
+    .menu-nav &:hover,
+    .menu-nav &:focus,
+    .menu-contact &:hover,
+    .menu-contact &:focus,
     .header__mobile &:hover,
     .header__mobile &:focus,
     .nav &:hover,

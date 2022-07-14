@@ -19,12 +19,13 @@
   @include btn(null, none);  
   padding: 0;
   background-color: transparent;
+
+  transition: fill var(--transition);
   
   &:hover > .menu__icon-line,
   &:focus > .menu__icon-line {
     fill: var(--accent-color);
-  }
-  transition: fill var(--transition);
+  }  
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -39,7 +40,9 @@
 
   @include btn(null, none);
   background-color: transparent;
+
   transition: fill var(--transition);
+  
   &:hover > .menu__icon-cross,
   &:focus > .menu__icon-cross {
     fill: var(--accent-color);

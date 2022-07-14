@@ -6,22 +6,16 @@
 .footer__info {
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
   }
 }
 
 .footer__site {
   display: block;
   text-align: center;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
-    align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -64,6 +58,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-top: 9px;
+    align-items: start;
   }
 }
 
@@ -184,19 +179,17 @@
 }
 
 .footer_link-wrap {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    padding-left: 76px;
-    padding-right: 89px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    
 
   @media screen and (max-width: 1199px) {
     align-items: baseline;
-    justify-content: center;
-    grid-gap: 165px;
-    grid-row-gap:60px;
+    justify-content: space-around;
   }
 }
 }

@@ -31,15 +31,20 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0) rotate(-360deg);
   }
-  @media screen and (min-width: 528px) {
+
+  @media screen and (min-width: 480px) {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
 
     transform: translate(-50%, -50%) scale(1) rotate(0);
   }
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
+    }
 }
 
 .form-group {
