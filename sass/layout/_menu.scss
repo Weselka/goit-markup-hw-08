@@ -71,10 +71,12 @@
 
 .menu-social__link {
   @include font(null, 500, 18px, 22px, 0.02em, var(--accent-color));
-  &:hover,
-  &:focus {
-    outline: transparent;
-    border: 1px solid var(--accent-color);
-  }
-  transition: border var(--transition)
+}
+
+.menu-social__item {
+  &:not(:last-child) {
+    border: 1px solid transparent;
+      border-right-color: rgba(33, 33, 33, 0.2);
+      padding-right: 20px;
+    }
 }

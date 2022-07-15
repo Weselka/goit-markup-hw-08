@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--section-item-gap);
+  list-style: none;
 }
 
 .teams-object {
@@ -21,6 +22,7 @@
 }
 
 .teams-subject {
+  overflow-x: hidden;
   padding-top: 30px;
   padding-bottom: 24px;
   @media screen and (min-width: 1200px) {
