@@ -680,7 +680,6 @@ img {
   background-color: var(--primary-bgc);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
-  overflow-x: hidden;
 }
 @media screen and (min-width: 768px) {
   .teams-object {
@@ -788,6 +787,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__info {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -986,7 +986,7 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   grid-gap: 8px;
   grid-row-gap: 15px;
 }
@@ -1323,6 +1323,7 @@ img {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  transition: border var(--transition);
 }
 .menu-social__link:hover, .menu-social__link:focus {
   outline: transparent;

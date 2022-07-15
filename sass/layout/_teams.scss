@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--section-item-gap);
-  // overflow-x: hidden;
 }
 
 .teams-object {
@@ -12,7 +11,6 @@
 
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
-  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
